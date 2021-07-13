@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Kai M. Designs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css" media="screen">
 </head>
 <!--FONTSSSSSS-->
 <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet">
@@ -21,87 +21,132 @@
 
 
         <header class="navigation">
-            <div class="inline-block">
+            <div class="logo">
                 <a href="https://www.kaimdesigns.com">
-                    <img class="logo" src="images/logo.png" alt="Kai Mills Design Logo">
+                    <img src="images/logo.png" alt="Kai Mills Design Logo" class="logo1">
+                </a>
+                <a href="https://www.kaimdesigns.com">
+                    <img src="images/logo-icon.png" alt="Kai Mills Design Logo" class="logo2"> 
                 </a>
             </div>
             <nav class=inline-block>
                 <ul>
-                    <li><a href="MyWork.html">Work</a></li>
-                    <li><a href="#about-me">About</a></li>
-                    <li class="contact"><a href="Contact.html">Contact</a></li>
+                    <li class="work"><a href="#my-work">Work</a></li>
+                    <li class="about"><a href="#about-me">About</a></li>
+                    <li class="contact"><a href="#contact-me">Contact</a></li>
                 </ul>
                 <!--- TRYING TO MAKE "CONTACT" A BUTTON????  <button>contact</button> -->
             </nav>
         </header>
 
         <!--BODY-->
-
-        <div class="hero-left">
-            <h1>Kai Mills<br>UX Designer</h1>
-            <img class="arrow" src="images/arrow.png" alt="Arrow pointing down">
-        </div>
-        <div class="pfp">
-            <img src="images/pfp.png" alt="Photo of Kai Mills">
+        <div class="header">
+            <div class="hero-left">
+                <h1>Kai Mills<br>UX Designer</h1>
+                <img src="images/pfpm.png" alt="Photo of Kai Mills" class="pfp2">
+                <!-- <div class="arrow bounce"></div> -->
+                <img class="arrow bounce" src="images/arrow.png" alt="Arrow pointing down">
+            </div>
+            <div class="pfp">
+                <img src="images/pfp.png" alt="Photo of Kai Mills" class="pfp1">
+            </div>
+            <img class="arrow bounce" src="images/logo-icon.png" alt="Arrow pointing down">
         </div>
     </div>
     <div class="gradient">
-        <section id="about-me">
-            <h2>Hello!!! :)</h2>
-            <p>I’m Kai. UX Designer with a background in Graphic Design. What I love most about design is the ability to
-                bring something completely unique into the world, that helps solve a problem or make life easier in some
-                way.
-            </p>
-
-        </section>
-        <section class="skillsSection">
-
-            <div class="skillsLeft">
-                <h2>Some of my skills</h2>
-                <h3>User Research</h3>
-                <p>User research is a way to really learn about the people you are trying to serve, It is important to
-                    lose
-                    all of your pre-existing assumptions and take the time to truly be open to thoughts and ideas that
-                    you
-                    didn’t even consider.
+        <div class="white">
+            <section id="about-me">
+                <h2>Hello!!! :)</h2>
+                <p>I’m Kai. UX Designer with a background in Graphic Design. What I love most about design is the
+                    ability to
+                    bring something completely unique into the world, that helps solve a problem or make life easier in
+                    some
+                    way.
                 </p>
-                <h3>User Empathy</h3>
-                <p>Naturally empathic person, who uses learned tools to truly understand user motivations. Everyone
-                    thinks
-                    very differently, so it’s important to lead with an open mind.
-                </p>
-                <h3>Qualitative Interviews</h3>
-                <p>Qualitative interviews are a great chance to really observe a person’s behaviors and motivations. I
-                    always enjoy hearing different perspectives and learning something new every time.
-                </p>
+
+            </section>
+            <section class="skillsSection">
+
+                <div class="skillsLeft">
+                    <h2>Some of my skills</h2>
+                    <h3>User Research</h3>
+                    <p>User research is a way to really learn about the people you are trying to serve, It is important
+                        to
+                        lose
+                        all of your pre-existing assumptions and take the time to truly be open to thoughts and ideas
+                        that
+                        you
+                        didn’t even consider.
+                    </p>
+                    <h3>User Empathy</h3>
+                    <p>Naturally empathic person, who uses learned tools to truly understand user motivations. Everyone
+                        thinks
+                        very differently, so it’s important to lead with an open mind.
+                    </p>
+                    <h3>Qualitative Interviews</h3>
+                    <p>Qualitative interviews are a great chance to really observe a person’s behaviors and motivations.
+                        I
+                        always enjoy hearing different perspectives and learning something new every time.
+                    </p>
+                    
+                </div>
+                <div class="skillsRight">
+                    <h2>I am familiar with</h2>
+                    <ul>
+                        <li>Paper and Pencil</li>
+                        <li>Adobe XD</li>
+                        <li>Figma</li>
+                        <li>InVision</li>
+                        <li>Photoshop</li>
+                        <li>Github</li>
+                        <li>Miro</li>
+                    </ul>
+                    
+                </div>
+            </section>
+            <div class="resume">
+            <button>Resume<img src="images/download.png" alt="Download Icon"></button>
             </div>
-            <div class="skillsRight">
-                <ul>
-                    <li>Paper and Pencil</li>
-                    <li>Adobe XD</li>
-                    <li>Figma</li>
-                    <li>InVision</li>
-                    <li>Photoshop</li>
-                    <li>Github</li>
-                    <li>Miro</li>
-                </ul>
+        </div>
+        <!-- My Work Section Constructed using CSS Grid -->
+
+        <section class="myWork" id="my-work">
+            <h2>My Work :)</h2>
+            <div class="wrapper">
+                <div class="projectOne">
+                    <div>
+                        <h3>Psychiatric Service Dog Partners <br>Re-Design</h3>
+                        <p>Addressed what is lacking with the current PSDP website and considered what consumers desire
+                            when
+                            visiting this site for information.</p>
+                        <button>View Case Study</button>
+                    </div>
+                    <div>
+                        <img src="images/psdp.png" alt="PSDP Mockups">
+                    </div>
+                </div>
+                <div class="projectTwo">
+                    <div>
+                        <h3>Trail Angel</h3>
+                        <p>A hiking companion to help empower female hikers by making them feel safe and secure during
+                            hikes.
+                        </p>
+                        <button>View Case Study</button>
+                    </div>
+                    <img src="images/trailAngel.png" alt="Trail Angel Mockup">
+                </div>
+                <div class="projectThree">
+                    <div>
+                        <h3>Final Project (Place Holder)</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <button>View Case Study</button>
+                    </div>
+                    <img src="images/placeHolder.png" alt="Rectangle indication place holder for image">
+                </div>
             </div>
         </section>
-        <button>Download Resume</button>
-        <section class="myWork">
-            <div class="projectOne">
 
-            </div>
-            <div class="projectTwo">
-
-            </div>
-            <div class="projectThree">
-
-            </div>
-        </section>
-
-        <footer id="footer">
+        <footer class="footer" id="contact-me">
             <a class="footer-logo" href="https://www.kaimdesigns.com">
                 <img src="images/logo-icon.png" alt="Kai Mills Design Logo">
             </a>
@@ -131,5 +176,4 @@
 </body>
 <script src="js/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 </html>
