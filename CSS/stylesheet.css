@@ -18,7 +18,7 @@ body{
 /* TEXT */
 h1 {
     font-family:'Arimo',sans-serif;
-    font-size:60px;
+    font-size:50px;
 }
 
 h2 {
@@ -60,7 +60,6 @@ p {
 .inline-block ul {
     list-style-type: none;
     border:0;
-
     padding-top:2% ;
 }
 
@@ -84,6 +83,7 @@ p {
 
 ul .contact {
     background-color: #D1A6A6;
+    border-style: solid;
     border-color:#546A7B;
     border-radius: 7px;
     border-width: 3px;
@@ -114,7 +114,6 @@ ul .contact {
     grid-template-rows: 1fr;
     grid-template-areas: "name photo"
     "arrow";
-    background-image: url("images/pfp.png");
 }
 .hero-left{ 
     height:20px;
@@ -123,8 +122,8 @@ ul .contact {
 }
 .arrow {
     z-index: 2;
-    padding-top: 240px;
-    padding-left:50px;
+    padding-top: 150px;
+    padding-left:120px;
     position: absolute;
 
   /* background-image: url("images/arrow.png"); */
@@ -149,9 +148,8 @@ ul .contact {
 
 
 #about-me {
-    padding:40px 50px 50px 50px;
-    margin-left:200px;
-    margin-right: 200px;
+    padding:70px 160px 50px 160px;
+    align-items: center;
     
 }
 .white {
@@ -165,15 +163,24 @@ ul .contact {
 }
 .skillsLeft {
     display: inline-block;
-    padding-left:40px;
+    
+   margin-left:70px;
+   margin-right:50px;
     width:60%;
 }
 
 .skillsRight {
-    width:30%;
+    width:40%;
     padding:50px;
     margin-right:60px;
+    margin-left:50px;
     background-color: #F3EAE3;
+}
+
+.skillsRight ul {
+    line-height: 35px;
+    font-family:'Hind Madurai', sans-serif;
+    font-size: 20px;
 }
 /*RESUME BUTTON*/
 .resume  {
@@ -192,19 +199,19 @@ ul .contact {
     font-family: 'Hind Madurai',sans-serif;
     font-weight:600;
     font-size: 25px; 
-    padding:10px 30px 10px 30px; 
+    padding:10px 1px 10px 1px; 
 }
 
 .resume img {
     width:15%;
     margin-left:10px;
-    margin-top:px;
+    margin-top:3px;
 
 }
 /*RESUME BUTTON*/
 
 .myWork{
-    background-color:#F5E7E7;
+    background-color:#E9EDF1;
     padding-bottom:140px;
     padding-top:40px;
 }
