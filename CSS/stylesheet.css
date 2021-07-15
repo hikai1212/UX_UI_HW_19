@@ -43,9 +43,9 @@ p {
     display:flex;
 }
 
-.logo {
-    width:50%;
-    padding:1%;
+.logo img {
+    width:60%;
+    padding:10px 0px 0px 40px;
     grid-area:logo;
   
 }
@@ -102,23 +102,25 @@ ul .contact {
 }
 
 .pfp {
-    width:30%;
     background-color:#F3EAE3;
     margin-left:50px;
-    grid-area: photo arrow;
+    grid-area: pfp;
 
 }
 .header{
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "name photo"
-    "arrow";
+    grid-template-areas: "hero-left pfp";
 }
 .hero-left{ 
     height:20px;
     padding:25px;
-    grid-area:name arrow;
+    grid-area:hero-left;
+}
+
+.hero-left h1{ 
+    padding-left:85px;
 }
 .arrow {
     z-index: 2;
@@ -300,6 +302,10 @@ ul .contact {
     display:none;
 }
 
+/* .pfp1{
+    width:30%;
+} */
+
 
 .logo2 {
     display:none;
@@ -410,20 +416,34 @@ ul .contact {
     }
     
     .pfp2 {
-       display:block;
+        display:block;
         background-color:#F3EAE3;
         margin-left:50px;
         grid-area: photo;
+        visibility:visible;
+    }
+
+    /* .header{
+        display:flex;
+    } */
+    .hero-left{ 
+        grid-area:hero-left;
+        padding:25px;
+    }
+    .header{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hero-left"
+        "pfp";
+    }
+
+    .pfp {
+        grid-area: pfp;
     
     }
-    /* .header{
-        display:grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "name"
-        "photo"
-        "arrow";
-    } */
+
     /* .hero-left{ 
         grid-area:name;
     }
